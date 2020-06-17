@@ -1,0 +1,612 @@
+* , *::before , *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*******************COLORS ********************/
+:root {
+    --main-color: #c70221;
+    --light-grey : #C6CFD6;
+    --warm-grey: #E7E7EF;
+    --white: #fff;
+    --deep-teal:  rgba(0, 48, 49,1);
+    --century: Century Gothic, sans-serif;
+
+
+}
+
+/**************************GLOBAL STYLES *****************************/
+
+html {
+    font-size: 10px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--century)
+}
+
+body {
+    font-family: Nunito, sans-serif;
+    font-weight: 300;
+}
+
+ul {
+    list-style: none;
+}
+ul, li,a  {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+textarea:focus, input:focus, button:focus{
+    outline: none;
+}
+::placeholder {
+    color: white;
+}
+section {
+    padding: 5rem 0;
+}
+
+p {
+    word-wrap: break-word;
+}
+.hamburger-menu {
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.close-menu {
+    display: none;
+}
+
+/****************REUSABLE STYLES ****************************/
+.container {
+    width: 100%;
+    padding: 1.2rem 8rem;
+    height: inherit;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--deep-teal);
+    cursor: pointer;
+    transition: color .2s;
+}
+.btn:hover {
+    color: var(--main-color);
+}
+
+.paragraph{
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+.header-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+/************* NAV HEADER ******************/
+
+.logo {
+    max-width: 40px;
+}
+
+.header {
+    width: 100%;
+    height: 8rem;
+    background-color: var(--white);
+    position: fixed;
+    z-index: 25;
+    margin: auto 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 1rem;
+ 
+}
+
+
+.social-item{
+    padding: 3px 3px;
+    border-radius: 5px;
+    box-shadow: 7px 7px 10px #bbcfda, -4px -4px 13px #fff, 
+    inset 4px 4px 8px rgba(209,217,230,0.2), inset -8px -8px 8px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 400ms;
+    margin: 0 10px;
+}
+
+.social-item:hover{
+    box-shadow: 4px 2px 18px #bbcfda, -4px -4px 13px #fff, 
+    inset 6px 6px 16px rgba(209,217,230,0.2), inset -8px -8px 8px rgba(255, 255, 255, 0.2);
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--deep-teal); 
+    font-weight: 400;
+    font-family: var(--century);
+    transition: all 400ms;
+}
+
+.nav-link:hover{
+    color: var(--main-color);
+    transform: scale(.96);
+}
+
+/***********************************HERO SECTION**********************************************/
+
+.hero {
+    width: 100%;
+    height: 75vh;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(166, 166, 166,.8)), url('/images/earth-dark.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-header {
+    width: 100%;
+    height: inherit;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.left-header {
+    flex: 1;
+}
+
+.right-header {
+    flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-end;
+}
+
+.title{
+    width: 60%;
+}
+
+.sub-title {
+    letter-spacing: 2px;
+    font-size: 2rem;
+    color: rgb(1, 77, 78);
+}
+
+.title , .sub-title {
+    margin-bottom: 20px;
+}
+
+
+/* CARD SECTION */
+
+.card {
+    padding: 25px 25px;
+    min-height: 120px;
+    width: 350px;
+    background-color: var(--warm-grey);
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 28px 40px 114px 19px rgba(0,0,0,0.15);
+-moz-box-shadow: 28px 40px 114px 19px rgba(0,0,0,0.15);
+box-shadow: 28px 40px 114px 19px rgba(0,0,0,0.15);
+opacity: 0;
+}
+
+.card-par {
+   word-wrap: break-word;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--deep-teal);
+}
+.fa-clock , .fa-money-bill-alt, .fa-ambulance {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+/*********************************CEO SECTION ************************************/
+.ceo-section{
+    background-color: var(--main-color);
+}
+.ceo-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    z-index: 1; 
+}
+
+.ceo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    
+}
+
+.ceo-par {
+  max-width: 50vw;
+  color: white;
+}
+
+.ceo-title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.ceo-photo{
+    text-align: center;
+}
+
+/***************************************CONTENT SECTION **********************************/
+
+.content-section {
+    width: 100%;
+    padding: 0;
+}
+
+.block{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.block-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--warm-grey);
+}
+
+.block-title {
+    color: var(--main-color);
+}
+
+.block-photo {
+    flex: 1;
+    box-shadow:inset 0 0 0 2000px rgba(255, 0, 150, 0.3);
+}
+.block-photo img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+/****************************EMAIL LIST ****************************************/
+
+.email-section {
+    width: 100%;
+    height: 300px;
+    background-color: var(--deep-teal);
+}
+
+.email-area {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+.email-area h2 {
+font-size: 3rem;
+color: white;
+text-transform: uppercase;
+}
+
+.email-area input {
+    border: none;
+    background-color: rgb(6, 64, 65);
+    padding: 15px 60px;
+    color: white;
+    border-radius: 5px;
+}
+
+/************************** FOOTER **********************/ 
+
+footer {
+    width: 100%;
+    min-height: 400px;
+   /* display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center; */
+   background-color: whitesmoke;
+   padding: 40px 0;
+}
+
+.footer-area {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-area ul li {
+    margin-bottom: 10px;
+}
+
+.footer-block {
+    flex: 1;
+    width: inherit;
+    height: inherit;
+}
+.footer-block:nth-child(2){
+    justify-self: flex-end;
+}
+
+.footer-title{
+    color: var(--deep-teal);
+}
+
+.social-list {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.footer-block h4 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.footer-block ul li a {
+    font-size: 1.5rem;
+}
+
+.blog-list {
+    display: block;
+    text-align: left;
+
+}
+
+
+@media only screen and (max-width: 770px){
+
+    /* REUSEABLE */
+    .paragraph{
+        font-size: 1.2rem;
+        width: 60%;
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+    }
+    /* HEADER and HERO SECTION */
+    .hero {
+        height: 60vh;
+    }
+
+    .title {
+        width: 80%;
+    }
+
+    .sub-title {
+        font-size: 1.5rem;
+    }
+.card-title{
+    font-size: 1.2rem;
+}
+.card{
+  width: 200px;
+  height: 100px;
+  padding: 15px 10px;
+  background-color: rgba(255, 255, 255, 0.3)
+}
+
+.fa-clock , .fa-money-bill-alt, .fa-ambulance  {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.nav-link {
+    font-size: 1.3rem;
+}
+
+
+
+/* CEO SECTION */
+.ceo-title{
+    font-size: 1.5rem;
+}
+.ceo{
+    width: 100px;
+}
+
+.ceo-par{
+    margin-top: 15px;
+}
+
+}
+
+
+@media only screen and (max-width: 666px){
+
+    .open .close-menu {
+        display: block;
+    }
+
+    .open .hamburger-menu {
+        display: none;
+    }
+
+    .open .nav-list {
+        display: flex;
+    }
+
+    .fa-bars {
+        cursor: pointer;
+    }
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 15px;
+        cursor: pointer;
+    }
+    .fa-times {
+        position: absolute;
+        z-index: 10;
+        top: 15px;
+        right: 15px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .nav {
+        display: block;
+    }
+    .nav-link {
+        font-size: 1.6rem;
+    }
+    .nav-item {
+        margin: 20px 0;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        padding-top: 80px;
+        padding-right: 20px;
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        right: 0;
+        width: 100%;
+        background-color: white;
+        display: none;
+        transition: display .7s;
+    }
+    .logo{
+        width: 30px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+      /* REUSEABLE */
+      .paragraph{
+        font-size: 1.2rem;
+        width: 60%;
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+    }
+    /* HEADER and HERO SECTION */
+    .hero {
+        height: 60vh;
+    }
+
+    .title {
+        width: 80%;
+    }
+
+    .sub-title {
+        font-size: 1.5rem;
+    }
+.card-title{
+    font-size: 1.2rem;
+}
+.card{
+  width: 200px;
+  height: 100px;
+  padding: 15px 10px;
+  background-color: rgba(255, 255, 255, 0.3)
+}
+
+.fa-clock , .fa-money-bill-alt, .fa-ambulance  {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.main-header {
+    flex-direction: column;
+    display: block;
+    justify-content: center;
+}
+.left-header{
+    padding-top: 100px;
+    text-align: center;
+}
+.right-header {
+    display: none;
+}
+/* CEO SECTION */
+.ceo-title{
+    font-size: 1.5rem;
+}
+.ceo{
+    width: 100px;
+}
+
+.ceo-par{
+    margin-top: 15px;
+    width: 90%;
+}
+
+.block {
+    flex-direction: column;
+}
+.block-title {
+    padding-top: 20px;
+}
+
+.block-par {
+    padding-bottom: 40px;
+
+}
+
+.footer-area {
+    flex-direction: column;
+}
+
+.footer-block {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer-block:first-child{
+    padding-top: 20px
+}
+    
+}
