@@ -4,8 +4,148 @@
     </div>
 </header>
 
-<section class="about-header">
-    <div class="container">
-        <h1>About</h1>
+<link href='https://fonts.googleapis.com/css?family=Goudy Bookletter 1911' rel='stylesheet'>
+
+
+
+
+
+
+
+<section class="page-container" id="content-wrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<center>
+    <div class="about-header" >
+        <img class="mySlides" src="/images/earth-dark.jpeg" style="width:100%">
+        <img class="mySlides" src="/images/doctorphone.jpg" style="width:100%">
+        <img class="mySlides" src="/images/world.jpg" style="width:100%">         
+    </div>
+</center>
+   
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
     </div>
 </section>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+{{!-- About area --}}
+
+<hr style="border-top: 5px solid crimson;">
+  <section class="about-area" id="about">
+            <h3 class="section-title">About Us</h3>
+            <ul class="about-content">
+                <li class="about-left"></li>
+                <li class="about-right">
+                     <h2>GlobeConnect is newer way of connecting</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo similique libero, excepturi quasi quos consequuntur quis velit aspernatur. Error, aut distinctio. Modi nobis nostrum eligendi aliquid veritatis fugiat eaque? Illum! </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus iure nostrum reprehenderit quisquam voluptatibus, dolorum sunt recusandae totam impedit minus molestiae necessitatibus architecto fuga. Iste voluptates labore quod nostrum illo.</p>
+                        <a href="" class="about-btn">Meet The Team</a>
+                </li>
+            </ul>
+       </section>
+
+
+
+
+<header class="solutions">
+  <h2>Solutions:</h2>
+  <h6>What we plan to do about</h6>
+</header>
+
+
+<!-- The App Section -->
+<div class="container2">
+  <div class="row2">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Service Inititative</b></h1>
+    <br>
+      <p style="font-size: 16px;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, rem at vero quidem repudiandae voluptatem possimus sapiente, unde quam, repellat optio ea! Nostrum quae saepe vero quas illo et nihil!</p>
+    <br>
+      <button class="button">Placeholder</button>
+    </div>
+    <div class="column-33">
+        <img src="/images/laptop.jpg" width="335" height="471">
+    </div>
+  </div>
+</div>
+
+<!-- Clarity Section -->
+<div class="container2" style="background-color:#f1f1f1">
+  <div class="row2">
+    <div class="column-33">
+      <img src="/images/world.jpg" alt="App" width="335" height="471">
+    </div>
+    <div class="column-66">
+    <h1 class="xlarge-font"><b>The Plan</b></h1>  
+      <p style="font-size: 16px;">
+      <br>
+      <p style="font-size: 16px;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, rem at vero quidem repudiandae voluptatem possimus sapiente, unde quam, repellat optio ea! Nostrum quae saepe vero quas illo et nihil!</p>
+    <br>
+      <button class="button" style="background-color:red">Placeholder</button>
+    </div>
+  </div>
+</div>
+
+<!-- The App Section -->
+<div class="container2">
+  <div class="row2">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Mobile Health Effectiveness</b></h1>
+      <br>
+      <p style="font-size: 16px;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, rem at vero quidem repudiandae voluptatem possimus sapiente, unde quam, repellat optio ea! Nostrum quae saepe vero quas illo et nihil!</p>
+    <br>
+      <button class="button">Placeholder</button>
+    </div>
+    <div class="column-33">
+        <img src="/images/tools.jpg" width="335" height="471" >
+    </div>
+  </div>
+</div>
+
+ 
+
+
+
+<br>
+<br>
+{{!-- footer --}}
+<footer class="blog-footer">
+
+    <div class="container">
+        <div class="blog-socials">
+             <h4>Connect with us on social media</h4>
+ {{> _socials}}
+        </div>
+
+    </div>
+     
+</footer>
+
