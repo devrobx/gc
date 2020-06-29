@@ -4,7 +4,7 @@
   "description": "Globeconnect Website",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index.js"
   },
   "author": "Robert Magomero, Yoseph Najem , Harsh Patel",
   "license": "ISC",
