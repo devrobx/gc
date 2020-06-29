@@ -348,11 +348,7 @@ text-transform: uppercase;
 
 footer {
     width: 100%;
-    min-height: 400px;
-   /* display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center; */
+    min-height: 500px;
    background-color: whitesmoke;
    padding: 40px 0;
 }
@@ -411,7 +407,8 @@ footer {
     }
 
     .header-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        text-align: center;
     }
     /* HEADER and HERO SECTION */
     .hero {
@@ -526,11 +523,11 @@ footer {
       /* REUSEABLE */
       .paragraph{
         font-size: 1.2rem;
-        width: 60%;
+        width: 95%;
     }
 
     .header-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     /* HEADER and HERO SECTION */
     .hero {
