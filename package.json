@@ -4,7 +4,7 @@
   "description": "Globeconnect Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index"
   },
   "author": "Robert Magomero, Yoseph Najem , Harsh Patel",
   "license": "ISC",
