@@ -166,10 +166,11 @@ p {
 .hero {
     width: 100%;
     height: 75vh;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(166, 166, 166,.8)), url('/images/earth-dark.jpeg');
+    background-color: var(--white);
+    /* background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(166, 166, 166,.4)), url('/images/earth-dark.jpeg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .main-header {
@@ -205,6 +206,11 @@ p {
 
 .title , .sub-title {
     margin-bottom: 20px;
+}
+
+.hero-photo {
+    width: 75%;
+    height: auto;
 }
 
 
@@ -243,7 +249,7 @@ opacity: 0;
 
 /*********************************CEO SECTION ************************************/
 .ceo-section{
-    background-color: var(--main-color);
+    background-color: var(--white);
 }
 .ceo-area {
     width: 100%;
@@ -264,19 +270,22 @@ opacity: 0;
 
 .ceo-par {
   max-width: 50vw;
-  color: white;
+  color: var(--deep-teal);
 }
 
 .ceo-title {
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-top: 10px;
-    color: white;
-    font-size: 1.5rem;
+    color: var(--deep-teal);
+    font-size: 1rem;
 }
 
 .ceo-photo{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /***************************************CONTENT SECTION **********************************/
@@ -284,6 +293,7 @@ opacity: 0;
 .content-section {
     width: 100%;
     padding: 0;
+    padding-top: 80px;
 }
 
 .block{
@@ -296,22 +306,24 @@ opacity: 0;
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background-color: var(--warm-grey);
+    background-color: var(--white);
 }
 
 .block-title {
-    color: var(--main-color);
+    color: var(--deep-teal);
 }
 
 .block-photo {
     flex: 1;
-    box-shadow:inset 0 0 0 2000px rgba(255, 0, 150, 0.3);
+    
+    
 }
 .block-photo img {
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
     
 }
 
@@ -358,6 +370,8 @@ footer {
     height: inherit;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-area ul li {
@@ -365,12 +379,13 @@ footer {
 }
 
 .footer-block {
-    flex: 1;
+    /* flex: 1;
     width: inherit;
-    height: inherit;
+    height: inherit; */
 }
 .footer-block:nth-child(2){
     justify-self: flex-end;
+   
 }
 
 .footer-title{
