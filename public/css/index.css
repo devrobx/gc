@@ -247,6 +247,10 @@ opacity: 0;
     margin-bottom: 15px;
 }
 
+.home-btn{
+    margin-top: 30px;
+    text-align: left;
+}
 /*********************************CEO SECTION ************************************/
 .ceo-section{
     background-color: var(--white);

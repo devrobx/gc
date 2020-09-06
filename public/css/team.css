@@ -46,3 +46,11 @@
     margin-bottom: 5px;
     border-radius: 50%;
 }
+
+.team-card h3 {
+    text-align: center;
+}
+
+.team-section {
+ padding-top: 150px;
+}

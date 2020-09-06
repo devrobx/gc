@@ -2,7 +2,9 @@
 .page-container {
     min-height: 100%;
   }
-
+.about-area {
+  padding-top: 130px
+}
 
 .about-title{
   background-color: maroon;
@@ -79,6 +81,8 @@
 
 .about-sub-title{
   color: var(--deep-teal);
+  font-size: 2.5rem;
+  text-transform: uppercase;
 }
 .about-area p{
   max-width: 800px;

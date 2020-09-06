@@ -40,6 +40,9 @@ app.get('/blog', (req,res) =>{
     res.render('blog')
 })
 
+app.get('/blog/post', (req,res) =>{
+    res.render('post')
+})
 app.get('/contact', (req,res) =>{
     res.render('contact')
 })
